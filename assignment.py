@@ -9,7 +9,7 @@ b = 0
 c = 0
 start = input("Press enter to start the program: ")
 print("Just sit back and relax, make sure you don't move your mouse. If you want to exit just move the mouse to the top left of the screen.")
-pyautogui.PAUSE = 0.001
+pyautogui.PAUSE = 0.01
 pyautogui.moveTo(1430, 200)
 pyautogui.drag(0, 130, duration=1)
 
