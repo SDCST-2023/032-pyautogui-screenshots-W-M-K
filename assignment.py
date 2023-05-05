@@ -16,25 +16,33 @@ pyautogui.drag(0, 130, duration=1)
 pyautogui.click(213, 388)
 
 while x==0:
-    while y < 5000:
+    
+    
+    while y < 300:
         pyautogui.click(213, 388,)
         y = y + z
+   
+   
+   
+    if y == 300:
         
-    if y == 5000:
-        pyautogui.click(1154, 169) 
+        pyautogui.locateOnScreen('Screenshot 2023-05-05 105620.png', confidence=0.4) 
+        pyautogui.click(x=pyautogui.center(pyautogui.locateOnScreen('Screenshot 2023-05-05 105620.png', confidence=0.4)).x, y=pyautogui.center(pyautogui.locateOnScreen('Screenshot 2023-05-05 105620.png', confidence=0.4)).y )
+        
 
+        pyautogui.click(1154, 169) 
         pyautogui.click(1283, 840, 3)   
         pyautogui.click(1271, 790, 3)
-        pyautogui.click(1277, 727, 3)
-        pyautogui.click(1268, 658, 3)
-        pyautogui.click(1268, 594, 3)
-        pyautogui.click(1268, 532, 3)
-        pyautogui.click(1268, 468, 3)
-        pyautogui.click(1268, 404, 3)
-        pyautogui.click(1268, 348, 3)
-        pyautogui.click(1268, 277, 3)
-    if pyautogui.locateOnScreen('Golden Cookie.png', confidence=0.8) is not None:
-        pyautogui.click(x=pyautogui.center(pyautogui.locateOnScreen('Golden Cookie.png', confidence=0.8)).x, y=pyautogui.center(pyautogui.locateOnScreen('Golden Cookie.png', confidence=0.8)).y )
+        pyautogui.click(1277, 727, 2)
+        pyautogui.click(1268, 658, 2)
+        pyautogui.click(1268, 594, 1)
+        pyautogui.click(1268, 532, 1)
+        pyautogui.click(1268, 468, 1)
+        pyautogui.click(1268, 404, 1)
+        pyautogui.click(1268, 348, 1)
+        pyautogui.click(1268, 277, 1)
+    
+    
     y = 0
 
         
